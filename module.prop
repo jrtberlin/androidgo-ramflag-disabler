@@ -1,6 +1,6 @@
-id=template
-name=Template Module
+id=androidgo-ramflag-disabler
+name=Android Go lowram flag disabler
 version=v1
 versionCode=1
-author=topjohnwu
-description=A short description
+author=jrtberlin
+description=Disables the lowram flag on Android GO devices

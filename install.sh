@@ -25,7 +25,7 @@
 SKIPMOUNT=false
 
 # Set to true if you need to load system.prop
-PROPFILE=false
+PROPFILE=true
 
 # Set to true if you need post-fs-data script
 POSTFSDATA=false
@@ -37,19 +37,6 @@ LATESTARTSERVICE=false
 # Replace list
 ##########################################################################################
 
-# List all directories you want to directly replace in the system
-# Check the documentations for more info why you would need this
-
-# Construct your list in the following format
-# This is an example
-REPLACE_EXAMPLE="
-/system/app/Youtube
-/system/priv-app/SystemUI
-/system/priv-app/Settings
-/system/framework
-"
-
-# Construct your own list here
 REPLACE="
 "
 
@@ -122,9 +109,10 @@ REPLACE="
 # Set what you want to display when installing your module
 
 print_modname() {
-  ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
-  ui_print "*******************************"
+  ui_print "*********************************"
+  ui_print " Android Go lowram flag disabler "
+  ui_print "*********************************"
+  ui_print "- modified build.prop"
 }
 
 # Copy/extract your module files into $MODPATH in on_install.
